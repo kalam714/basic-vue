@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
-    "",
+    "\\node_modules\\validate-npm-package-license",
+    "\\node_modules\\vee-validate",
+    "\\node_modules\\vee-validate\\dist",
+    "\\node_modules\\vee-validate\\dist\\types",
     "\\src",
     "\\src\\components"
   ],
-  "SelectedNode": "\\src\\App.vue",
+  "SelectedNode": "\\src\\main.js",
   "PreviewInSolutionExplorer": false
 }

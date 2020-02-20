@@ -3,6 +3,7 @@
     <div class="holder">
         <form @submit.prevent="addSkill">
             <input type="text" placeholder="Enter your skill" v-model="skill" />
+   
             {{skill}}
         </form>
         <ul>
@@ -17,25 +18,25 @@
 </template>
 
 <script>
-export default {
-  name: 'Skills',
+    export default {
+        name: 'Skills',
         data() {
             return {
-                skill:'',
+                skill: '',
                 skills: [
                     { 'skill': 'vue js' },
-                    {'skill':'frontend developer'}
+                    { 'skill': 'frontend developer' }
                 ]
             }
         },
         methods: {
             addSkill() {
-                this.skills.push({ skill: this.skill })
-                this.skill=''
-
+                this.skills.push({ skill: this.skill });
+                this.skill = '';
             }
         }
-}
+    }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -75,5 +76,12 @@ export default {
         font-size: 1.3em;
         background-color: #323333;
         color: #687F7F;
+    }
+    .alert {
+        background: #fdf2ce;
+        font-weight: bold;
+        display: inline-block;
+        padding: 5px;
+        margin-top: -20px;
     }
 </style>
